@@ -2276,6 +2276,23 @@ section.subscription_pre p {
 }
 
 @media (min-width: 834px) and (max-width: 1122px){
+    #intro {
+        height: 770px;
+        padding: 35px 0 35px 0;
+    }
+    .best_iptv {
+        width: 80%;
+        float: left;
+        padding-top: 50px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .best_iptv.best_iptv-left {
+        padding-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
     section#intro2 h2.step_no {
         top: 16%;
         left: 145px;
@@ -2284,8 +2301,26 @@ section.subscription_pre p {
             font-size: 13px;  
     }
     .best_iptv.best_iptv-right {
-        width: 45%;
+        width: 44%;
         }
+        
+        #intro .intro-content {
+                padding-right: 60px;
+        }
+    section#intro2 h2.first_step::after ,section#intro2 h2.second_step::after{
+        display: none;
+    }
     
-    
+}
+@media (min-width: 834px) and (max-width: 925px){
+    section#intro2 h2.step_no {
+    top: 19%;
+    left: 362px;
+}
+}
+@media (min-width: 926px) and (max-width: 1024px){
+    section#intro2 h2.step_no {
+    top: 15%;
+    left: 130px;
+}
 }
