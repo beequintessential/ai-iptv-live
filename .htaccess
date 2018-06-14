@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^(index\.php|adminer\.php|robots\.txt|favicon\.ico|media|uploads|assets) - [PT,L]
+RewriteRule .* index.php?/$0 [PT,L,QSA]
+
+
+<FilesMatch ".(eot|ttf|otf|woff)">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
